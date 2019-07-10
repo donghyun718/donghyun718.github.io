@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="All categories">
+        <meta property="og:title" content="내용정리-Gitflow">
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>All categories - July Summer</title>
+    <title>내용정리-Gitflow - July Summer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -157,43 +157,90 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-    <header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>All categories</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                    <div class="post-preview">
-    <a href="/categories/내용정리/">
-        <h1 class="post-title archive">
-            내용정리
-        </h1>
-    </a>
-</div>
-                
-                <div class="archive-before-pagination"></div>
+                <div class="post-heading">
+                    <h1>내용정리-Gitflow</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-07-10
+                        
+                    </span>
+                </div>
             </div>
         </div>
     </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
 
 
+<a href="/tags/Gitflow/">#Gitflow</a>
 
 
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
 
+<a href="/categories/내용정리/">내용정리</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Gitflow"><a href="#Gitflow" class="headerlink" title="Gitflow"></a>Gitflow</h1><h3 id="1-Gitflow-설치"><a href="#1-Gitflow-설치" class="headerlink" title="1. Gitflow 설치"></a>1. Gitflow 설치</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git-flow</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Gitflow-초기화"><a href="#2-Gitflow-초기화" class="headerlink" title="2. Gitflow 초기화"></a>2. Gitflow 초기화</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow init</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-feature-branch"><a href="#3-feature-branch" class="headerlink" title="3. feature branch"></a>3. feature branch</h3><p>master branch에서 develop branch를 만든다.<br>기능 개발은 develop branch에서 한다.  </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature start feature/name</span><br></pre></td></tr></table></figure>
+
+<p>develop branch에서 feature/name branch를 생성하고 feature branch로 전환한다.  </p>
+<p><strong><em>flow feature finish</em></strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature finish feature/name</span><br></pre></td></tr></table></figure>
+
+<p>feature/name branch를 develop branch로 merge후 해당 feature branch가 삭제되며 develop branch로 전환된다.   </p>
+<p><strong><em>merge&amp;delete</em></strong><br>finish를 하면 깔끔하게 merge와 delete가 같이 되지만 실수로 merge를 했을 경우, branch를 따로 삭제해야 한다. 삭제가 필수는 아니지만 보통 기능구현이 끝난 branch는 삭제하는 걸로 알고 있다.  </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git checkout develop</span><br><span class="line">git merge origin develop</span><br><span class="line">git branch -d feature/name</span><br><span class="line">git remote prune origin</span><br><span class="line">git push origin :feature/name</span><br></pre></td></tr></table></figure>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
 
     <!-- Footer -->
     <hr />
