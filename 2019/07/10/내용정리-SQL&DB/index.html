@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Junior Developer">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Donghyun">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="내용정리-SQL&amp;DB편">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Junior Developer">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="July Summer">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://donghyun718.github.iohttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://donghyun718.github.iohttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>내용정리-SQL&amp;DB편 - July Summer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">YOLO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/donghyun718">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>내용정리-SQL&DB편</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-07-10
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Database/">#Database</a> <a href="/tags/SQL/">#SQL</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/내용정리/">내용정리</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="내용정리-SQL-amp-DB편"><a href="#내용정리-SQL-amp-DB편" class="headerlink" title="내용정리 - SQL&amp;DB편"></a>내용정리 - SQL&amp;DB편</h1><h3 id="Database란"><a href="#Database란" class="headerlink" title="Database란"></a>Database란</h3><blockquote>
+<p>기록 정보를 모아둔 것을 데이터 베이스라 한다. </p>
+</blockquote>
+<p>1) 관계형 데이터베이스<br>열과 행을 갖는 2차원 테이블로, 데이터를 <code>key</code>와 <code>value</code>라는 연결 고리로 연결하여 데이터를 조회하고 가공하는 데이터 베이스.<br>2) 계층형 데이터베이스<br>컴퓨터 저장 장치에 주로 사용하는 방식으로, 부모 - 자식 관계로 데이터를 표현하는 데이터 베이스.<br>3) 객체지향 데이터베이스<br>객체와 객체 식별자, 속성과 메서드, 클래스, 클래스 계층 및 상속 등 객체 지향 데이터 모델을 지원하는 데이터베이스<br>4) XML 데이터베이스<br>XML 표준 문서 구조를 계층형 트리 형태로 저장하거나 관리하는 데이터베이스  </p>
+<h4 id="데이터베이스-구성요소"><a href="#데이터베이스-구성요소" class="headerlink" title="데이터베이스 구성요소"></a>데이터베이스 구성요소</h4><ol>
+<li>개체<br>데이터 베이스에서 표현하고자 하는 유형, 무형의 객체로서 서로 구별 되는 것.<br>ex) 고객, 학생, 과목, 학과, …</li>
+<li>속성<br>개체의 특성이나 상태.<br>ex) 학생(학번, 이름, 학년, 주소, …)</li>
+<li>관계<br>개체와 개체 혹은 개체와 속성간의 관계  </li>
+</ol>
+<h4 id="테이블-상세-구조"><a href="#테이블-상세-구조" class="headerlink" title="테이블 상세 구조"></a>테이블 상세 구조</h4><ol>
+<li>행 : 특정 개체에 대한 모든 데이터를 나타내는 단일 행  </li>
+<li>기본 키(primary key) : 유일하게 데이터를 구분하는 열로, 데이터를 식별하는 ‘식별자’. 중복값과 null 값을 가질 수 없다. </li>
+<li>고유 키(unique key) : 행에서 유일한 값을 갖는 데이터 값으로 구성 된 열. 키본키가 아닌 데이터 값이 존재한다.  </li>
+<li>외래 키(foreign key) : 테이블 간에 서로 연결 관계를 정의하는 외래 키.  테이블 구성 열이자 다른 테이블과 연결을 위한 키.  </li>
+</ol>
+<h3 id="SQL이란"><a href="#SQL이란" class="headerlink" title="SQL이란?"></a>SQL이란?</h3><blockquote>
+<p>관계형 데이터베이스를 조작하기 위해 만들어진 표준 언어.  </p>
+</blockquote>
+<h3 id="SQL-특징"><a href="#SQL-특징" class="headerlink" title="SQL 특징"></a>SQL 특징</h3><p>1) 사용하기 쉬움.<br>2) 절자가 없는 비절차적 언어<br>3) 관계형 데이터베이스의 데이터 조작 가능  </p>
+<h3 id="SQL-명령어-종류"><a href="#SQL-명령어-종류" class="headerlink" title="SQL 명령어 종류"></a>SQL 명령어 종류</h3><table>
+    <tr>
+        <td><strong>종류</strong></td>
+        <td><strong>기능</strong></td>
+        <td><strong>명령어</strong></td>
+    </tr>
+    <tr>
+        <td>DML<br>(Data Manipulation Language)</td>
+        <td>데이터 베이스의 논리적, 물리적 구조를 정의</td>
+        <td>SELECT<br>INSERT<br>UPDATE<br>DELETE</td>
+    </tr>
+    <tr>
+        <td>DDL<br>(Data Definition Language)</td>
+        <td>데이터 베이스에 접근하여 데이터를 검색, 생긴, 삽입, 삭제</td>
+        <td>CREATE<br>ALTER<br>DROP<br>RENAME<br>TRUNCATE</td>
+    </tr>
+    <tr>
+        <td>DCL<br>(Data Control Language)</td>
+        <td>데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 받음.</td>
+        <td>GRANT<br>REMOVE</td>
+    </tr>
+    <tr>
+        <td>TCL<br>(Transaction Control Language)</td>
+        <td>데이터 베이스의 내용이 정확성과 안전성을 유지하도록 제어</td>
+        <td>COMMIT<br>ROLLBACK<br>SAVEPOINT</td>
+    </tr>
+</table>
+
+<h4 id="1-SELECT문"><a href="#1-SELECT문" class="headerlink" title="1. SELECT문"></a>1. SELECT문</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [<span class="keyword">DISTINCT</span>] COLUMNNAME [<span class="keyword">or</span> <span class="keyword">alias</span>]</span><br><span class="line"><span class="keyword">FROM</span> TABLENAME</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span> COLUMNNAME];</span><br><span class="line">``` </span><br><span class="line">`<span class="keyword">SELECT</span><span class="string">` 절은 열을 선택, `</span><span class="keyword">FROM</span><span class="string">` 절은 데이터를 가져올 테이블 지정  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">**_SELECT~ FROM_**</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span><span class="keyword">sql</span></span><br><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure>
+
+<p>EMP테이블의 전체 데이터를 출력하는 쿼리문.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> empid, first_name, last_name</span><br><span class="line"><span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<p>emp 테이블에서 직원들의 empid, first_name, last_name를 출력하는 쿼리문.  </p>
+<p><strong><em>ORDER BY</em></strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORDER BY col_name [ASC or DESC];</span><br></pre></td></tr></table></figure>
+
+<p><code>ORDER BY</code>를 사용하여 행 정렬 순서를 지정할 수 있다.<br><code>ASC</code>는 오름차순 정렬(default), <code>DESC</code>는 내림차순 정렬이다.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> empid, first_name, last_name</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> empid <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<p>emp 테이블에서 직원들의 empid, first_name, last_name를 내림차순 정렬해 출력하는 쿼리문.  </p>
+<p><strong><em>DISTINCT</em></strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DISTINCT col_name</span><br></pre></td></tr></table></figure>
+
+<p><code>DISTINCT</code> 명령어는 중복된 행을 제거한다.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> jobid</span><br><span class="line"><span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<p>emp 테이블에서 jobid를 중복제거해 출력하는 쿼리문.  </p>
+<p><strong><em>AS</em></strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> col_name <span class="keyword">AS</span> <span class="keyword">alias</span></span><br></pre></td></tr></table></figure>
+
+<p>명명된 열 이름 외에 임의로 바꿔 쓰고자 할때 사용하는 별칭이다.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> empid <span class="keyword">AS</span> <span class="string">'사원번호'</span>, first_name <span class="keyword">AS</span> <span class="string">'이름'</span>, last_name <span class="keyword">AS</span> <span class="string">'성'</span></span><br><span class="line"><span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<p>emp테이블에서 empid는 사원번호, first_name는 이름 그리고 last_name은 성으로 출력하는 쿼리문.  </p>
+<p><strong><em>WHERE</em></strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> col_name</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">WHERE</span> 조건;</span><br></pre></td></tr></table></figure>
+
+<p>조건에 맞는 데이터를 조회할 때 사용하는 것이 <code>WHERE</code>절이다.  <code>WHERE</code>절에서는 연산자를 사용하여 데이터 값을 조작할 수 있다.  </p>
+<ul>
+<li><p>비교 연산자<br>비교 연산자는 프로그래밍 언어와 비슷하다. 프로그래밍 언어에서 같지 않다를 <code>!=</code>로 표현하지만 SQL문은 <code>&lt;&gt;</code>로도 표현 가능하다.  </p>
+</li>
+<li><p>SQL 연산자  </p>
+<ul>
+<li><p>BETWEEN 연산자<br><code>BETWEEN</code> 연산자는 두 값의 범위에 해당하는 행을 출력할 때 사용.</p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">WHERE</span> salary <span class="keyword">BETWEEN</span> <span class="number">10000</span> <span class="keyword">AND</span> <span class="number">20000</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>IN 연산자<br>조회하고자 하는 데이터 값이 여러 개일 때 사용.<br><code>=</code>연산자와 유사하지만 <code>=</code>는 조회 조건으로 데이터 값을 하나만 지정 가능.  </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">WHERE</span> salary <span class="keyword">IN</span> (<span class="number">10000</span>,<span class="number">17000</span>,<span class="number">24000</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>LIKE 연산자<br>조회 조건 값이 명확하지 않을 때 사용.<br><code>LIKE</code> 연산자는 %와 _같은 기호 연산자와 함께 사용. %는 ‘모든 문자’라는 의미이고 _는 ‘한 글자’라는 의미.   </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">WHERE</span> jobid <span class="keyword">LIKE</span> <span class="string">'AD%'</span>; // 맨 앞에 AD라는 문자열을 가진 데이터</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">WHERE</span> jobid <span class="keyword">LIKE</span> <span class="string">'AD___'</span>; // AD 뒤에 따라오는 문자열이 3자리인 데이터</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>IS NULL 연산자<br>데이터 값이 null인 경우를 조회하고자 할 때 사용.  </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> emp</span><br><span class="line"><span class="keyword">WHERE</span> mgrid <span class="keyword">IS</span> <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>논리 연산자<br><code>AND</code>, <code>OR</code>, <code>NOT</code>으로 SQL 문의 조건을 계소 추가해야 할 때 필수 연산자.  </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NOT BETWEEN a AND b</span><br><span class="line">NOT IN (list)</span><br><span class="line">IS NOT NULL</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="2-DML"><a href="#2-DML" class="headerlink" title="2. DML"></a>2. DML</h4><p>데이터를 직접 삽입, 생긴, 삭제하는 명령어.  </p>
+<p><strong><em>INSERT</em></strong><br>테이블에 새로운 행을 삽입할 때 사용.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name [(col1, col2, col3, ...)]</span><br><span class="line"><span class="keyword">VALUES</span> (data1, data2, data3, ...);</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>UPDATE</em></strong><br>기존의 데이터 값을 다른 데이터 값으로 변경할 때 사용  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> table_name</span><br><span class="line"><span class="keyword">SET</span> col1 = data1 [, col2 = data2, ...]</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식];</span><br></pre></td></tr></table></figure>
+
+<p><code>INSERT</code>, <code>UPDATE</code> 명령어로 데이터를 삽입하거나 갱신할 때는 입력되는 데이터의 순서, 데이터 타입과 제약 조건(NOT NULL, UNIQUE 등)에 주의해야 한다.  </p>
+<p><strong><em>DELETE</em></strong><br>테이블의 데이터를 삭제할 때 사용.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> [<span class="keyword">FROM</span>] table_name</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식];</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-DDL"><a href="#3-DDL" class="headerlink" title="3. DDL"></a>3. DDL</h4><p>테이블과 관련 열을 생성하고 변경하고 삭제하는 명령어  </p>
+<p><strong><em>CREATE</em></strong><br>새로운 테이블을 생성할 때 사용.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> table_name</span><br><span class="line">        (col1   datatype,</span><br><span class="line">         col2   datatype[(자릿수)],</span><br><span class="line">         ...</span><br><span class="line">        );</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>ALTER</em></strong><br>이미 생성한 테이블에 열을 추가, 변경, 삭제하여 테이블의 구조를 변경  </p>
+<ul>
+<li><p>열 추가  </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> table_name</span><br><span class="line">        <span class="keyword">ADD</span>(col1    datatype,</span><br><span class="line">            col2    datatype,</span><br><span class="line">            ...</span><br><span class="line">        );</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>열 수정  </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">ALTER</span> table_name</span><br><span class="line">            <span class="keyword">MODIFY</span>(col1    datatype,</span><br><span class="line">                col2    datatype,</span><br><span class="line">                ...</span><br><span class="line">            );</span><br><span class="line">    ```   </span><br><span class="line">- 열 이름 바꾸기 </span><br><span class="line">    ```sql</span><br><span class="line">    <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">RENAME</span> <span class="keyword">COLUMN</span> <span class="keyword">col</span> <span class="keyword">to</span> rename_col;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>열 삭제  </p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> <span class="keyword">col</span>;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong><em>TRUNCATE</em></strong><br>테이블의 데이터를 모두 삭제하고 사용하던 기억 공간도 해제되지만 테이블 구조는 삭제되지 않는다.   </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> table_name;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>DROP</em></strong><br>테이블에 있는 모든 바료와 그와 연관된 모든 인덱스를 삭제하고 사용하고 있던 저장공간을 돌려준다.  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> table_name;</span><br></pre></td></tr></table></figure>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/donghyun718" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 Donghyun<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
