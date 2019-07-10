@@ -219,26 +219,29 @@
 <li>관계형 데이터베이스<br>열과 행을 갖는 2차원 테이블로, 데이터를 <code>key</code>와 <code>value</code>라는 연결 고리로 연결하여 데이터를 조회하고 가공하는 데이터 베이스.</li>
 <li>계층형 데이터베이스<br>컴퓨터 저장 장치에 주로 사용하는 방식으로, 부모 - 자식 관계로 데이터를 표현하는 데이터 베이스.  </li>
 <li>객체지향 데이터베이스<br>객체와 객체 식별자, 속성과 메서드, 클래스, 클래스 계층 및 상속 등 객체 지향 데이터 모델을 지원하는 데이터베이스  </li>
-<li>XML 데이터베이스<br>XML 표준 문서 구조를 계층형 트리 형태로 저장하거나 관리하는 데이터베이스  <br>
-#### 데이터베이스 구성요소  </li>
-<li>개체<br>데이터 베이스에서 표현하고자 하는 유형, 무형의 객체로서 서로 구별 되는 것.<br>ex) 고객, 학생, 과목, 학과, …</li>
-<li>속성<br>개체의 특성이나 상태.<br>ex) 학생(학번, 이름, 학년, 주소, …)</li>
-<li>관계<br>개체와 개체 혹은 개체와 속성간의 관계  <br>
-#### 테이블 상세 구조  </li>
-<li>행 : 특정 개체에 대한 모든 데이터를 나타내는 단일 행  </li>
-<li>기본 키(primary key) : 유일하게 데이터를 구분하는 열로, 데이터를 식별하는 ‘식별자’. 중복값과 null 값을 가질 수 없다. </li>
-<li>고유 키(unique key) : 행에서 유일한 값을 갖는 데이터 값으로 구성 된 열. 키본키가 아닌 데이터 값이 존재한다.  </li>
-<li>외래 키(foreign key) : 테이블 간에 서로 연결 관계를 정의하는 외래 키.  테이블 구성 열이자 다른 테이블과 연결을 위한 키.  <br>
-## SQL이란?  
-> 관계형 데이터베이스를 조작하기 위해 만들어진 표준 언어.  
-<br>
-### SQL 특징  
-1) 사용하기 쉬움.  
-2) 절자가 없는 비절차적 언어  
-3) 관계형 데이터베이스의 데이터 조작 가능  
+<li>XML 데이터베이스<br>XML 표준 문서 구조를 계층형 트리 형태로 저장하거나 관리하는 데이터베이스  <br>  
 
 </li>
 </ol>
+<h4 id="데이터베이스-구성요소"><a href="#데이터베이스-구성요소" class="headerlink" title="데이터베이스 구성요소"></a>데이터베이스 구성요소</h4><ol>
+<li>개체<br>데이터 베이스에서 표현하고자 하는 유형, 무형의 객체로서 서로 구별 되는 것.<br>ex) 고객, 학생, 과목, 학과, …</li>
+<li>속성<br>개체의 특성이나 상태.<br>ex) 학생(학번, 이름, 학년, 주소, …)</li>
+<li>관계<br>개체와 개체 혹은 개체와 속성간의 관계  <br>  
+
+</li>
+</ol>
+<h4 id="테이블-상세-구조"><a href="#테이블-상세-구조" class="headerlink" title="테이블 상세 구조"></a>테이블 상세 구조</h4><ol>
+<li>행 : 특정 개체에 대한 모든 데이터를 나타내는 단일 행  </li>
+<li>기본 키(primary key) : 유일하게 데이터를 구분하는 열로, 데이터를 식별하는 ‘식별자’. 중복값과 null 값을 가질 수 없다. </li>
+<li>고유 키(unique key) : 행에서 유일한 값을 갖는 데이터 값으로 구성 된 열. 키본키가 아닌 데이터 값이 존재한다.  </li>
+<li>외래 키(foreign key) : 테이블 간에 서로 연결 관계를 정의하는 외래 키.  테이블 구성 열이자 다른 테이블과 연결을 위한 키.  <br>  
+
+</li>
+</ol>
+<h2 id="SQL이란"><a href="#SQL이란" class="headerlink" title="SQL이란?"></a>SQL이란?</h2><blockquote>
+<p>관계형 데이터베이스를 조작하기 위해 만들어진 표준 언어.<br><br>  </p>
+</blockquote>
+<h3 id="SQL-특징"><a href="#SQL-특징" class="headerlink" title="SQL 특징"></a>SQL 특징</h3><p>1) 사용하기 쉬움.<br>2) 절자가 없는 비절차적 언어<br>3) 관계형 데이터베이스의 데이터 조작 가능  </p>
 <h3 id="SQL-명령어-종류"><a href="#SQL-명령어-종류" class="headerlink" title="SQL 명령어 종류"></a>SQL 명령어 종류</h3><table>
     <tr>
         <td><strong>종류</strong></td>
@@ -266,9 +269,9 @@
         <td>COMMIT<br>ROLLBACK<br>SAVEPOINT</td>
     </tr>
 </table>
-<br>
-#### 1. SELECT문  
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [<span class="keyword">DISTINCT</span>] COLUMNNAME [<span class="keyword">or</span> <span class="keyword">alias</span>]</span><br><span class="line"><span class="keyword">FROM</span> TABLENAME</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span> COLUMNNAME];</span><br><span class="line">``` </span><br><span class="line">`<span class="keyword">SELECT</span><span class="string">` 절은 열을 선택, `</span><span class="keyword">FROM</span><span class="string">` 절은 데이터를 가져올 테이블 지정  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">**_SELECT~ FROM_**</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span><span class="keyword">sql</span></span><br><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h4 id="1-SELECT문"><a href="#1-SELECT문" class="headerlink" title="1. SELECT문"></a>1. SELECT문</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [<span class="keyword">DISTINCT</span>] COLUMNNAME [<span class="keyword">or</span> <span class="keyword">alias</span>]</span><br><span class="line"><span class="keyword">FROM</span> TABLENAME</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span> COLUMNNAME];</span><br><span class="line">``` </span><br><span class="line">`<span class="keyword">SELECT</span><span class="string">` 절은 열을 선택, `</span><span class="keyword">FROM</span><span class="string">` 절은 데이터를 가져올 테이블 지정  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">**_SELECT~ FROM_**</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span><span class="keyword">sql</span></span><br><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure>
 
 <p>EMP테이블의 전체 데이터를 출력하는 쿼리문.  </p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> empid, first_name, last_name</span><br><span class="line"><span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
@@ -325,10 +328,9 @@
 
 </li>
 </ul>
-<br>
-#### 2. DML
-데이터를 직접 삽입, 생긴, 삭제하는 명령어.  
+<br>  
 
+<h4 id="2-DML"><a href="#2-DML" class="headerlink" title="2. DML"></a>2. DML</h4><p>데이터를 직접 삽입, 생긴, 삭제하는 명령어.  </p>
 <p><strong><em>INSERT</em></strong><br>테이블에 새로운 행을 삽입할 때 사용.  </p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name [(col1, col2, col3, ...)]</span><br><span class="line"><span class="keyword">VALUES</span> (data1, data2, data3, ...);</span><br></pre></td></tr></table></figure>
 
@@ -339,10 +341,9 @@
 <p><strong><em>DELETE</em></strong><br>테이블의 데이터를 삭제할 때 사용.  </p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> [<span class="keyword">FROM</span>] table_name</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식];</span><br></pre></td></tr></table></figure>
 
-<br>
-#### 3. DDL
-테이블과 관련 열을 생성하고 변경하고 삭제하는 명령어  
+<br>  
 
+<h4 id="3-DDL"><a href="#3-DDL" class="headerlink" title="3. DDL"></a>3. DDL</h4><p>테이블과 관련 열을 생성하고 변경하고 삭제하는 명령어  </p>
 <p><strong><em>CREATE</em></strong><br>새로운 테이블을 생성할 때 사용.  </p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> table_name</span><br><span class="line">        (col1   datatype,</span><br><span class="line">         col2   datatype[(자릿수)],</span><br><span class="line">         ...</span><br><span class="line">        );</span><br></pre></td></tr></table></figure>
 
