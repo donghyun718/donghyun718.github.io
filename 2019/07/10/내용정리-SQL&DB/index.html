@@ -275,7 +275,15 @@
 </table>
 <br>  
 
-<h4 id="1-SELECT문"><a href="#1-SELECT문" class="headerlink" title="1. SELECT문"></a>1. SELECT문</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [<span class="keyword">DISTINCT</span>] COLUMNNAME [<span class="keyword">or</span> <span class="keyword">alias</span>]</span><br><span class="line"><span class="keyword">FROM</span> TABLENAME</span><br><span class="line">[<span class="keyword">WHERE</span> 조건식]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span> COLUMNNAME];</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">`<span class="keyword">SELECT</span><span class="string">` 절은 열을 선택, `</span><span class="keyword">FROM</span><span class="string">` 절은 데이터를 가져올 테이블 지정  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">**_SELECT~ FROM_**</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span><span class="keyword">sql</span></span><br><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure>
+<h4 id="1-SELECT문"><a href="#1-SELECT문" class="headerlink" title="1. SELECT문"></a>1. SELECT문</h4><pre><code>SELECT [DISTINCT] COLUMNNAME [or alias]
+FROM TABLENAME
+[WHERE 조건식]
+[ORDER BY COLUMNNAME];
+</code></pre> 
+
+<p><code>SELECT</code> 절은 열을 선택, <code>FROM</code> 절은 데이터를 가져올 테이블 지정  </p>
+<p><strong><em>SELECT~ FROM</em></strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure>
 
 <p>EMP테이블의 전체 데이터를 출력하는 쿼리문.  </p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> empid, first_name, last_name</span><br><span class="line"><span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
