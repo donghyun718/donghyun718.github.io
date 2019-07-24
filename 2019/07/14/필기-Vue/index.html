@@ -213,13 +213,13 @@
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h3 id="Options-Data"><a href="#Options-Data" class="headerlink" title="Options / Data"></a>Options / Data</h3><h4 id="1-data"><a href="#1-data" class="headerlink" title="1. data"></a>1. data</h4><p><em><strong>object type</strong></em></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue&#123;</span><br><span class="line">    data : &#123;</span><br><span class="line">        a : <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">new Vue&#123;</span><br><span class="line">    data : &#123;</span><br><span class="line">        a : 1</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><em><strong>function type</strong></em>  </p>
-<pre><code class="javascript"><span class="keyword">new</span> Vue{
-    data : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
-        <span class="keyword">return</span> {
-            a : <span class="number">1</span>
+<pre><code class="{.javascript}">new Vue{
+    data : function() {
+        return {
+            a : 1
         }
     }
 }</code></pre>
@@ -234,35 +234,35 @@
 <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
 
 <span class="tag">&lt;<span class="name">script</span>&gt;</span>
-<span class="javascript"><span class="comment">// 등록</span></span>
-<span class="javascript"><span class="keyword">var</span> Child = {</span>
+// 등록
+var Child = {
 <span class="xml">    template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span>사용자 정의 컴포넌트 입니다!<span class="tag">&lt;/<span class="name">div</span>&gt;</span>'</span>
 }
 
-<span class="javascript">Vue.component(<span class="string">'simple-counter'</span>, {</span>
+Vue.component('simple-counter', {
 <span class="xml">    template: '<span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span><span class="comment">{{ counter }}</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span>',</span>
-<span class="javascript">    <span class="comment">// 데이터는 기술적으로 함수이므로 Vue는 따지지 않지만</span></span>
-<span class="javascript">    <span class="comment">// 각 컴포넌트 인스턴스에 대해 같은 객체 참조를 반환합니다.</span></span>
-<span class="javascript">    data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span>
-<span class="javascript">        <span class="keyword">return</span> {</span>
+    // 데이터는 기술적으로 함수이므로 Vue는 따지지 않지만
+    // 각 컴포넌트 인스턴스에 대해 같은 객체 참조를 반환합니다.
+    data: function () {
+        return {
             counter: 0
         }
     }
 })
 
-<span class="javascript"><span class="keyword">new</span> Vue({</span>
-<span class="javascript">    el: <span class="string">'#example'</span>,</span>
+new Vue({
+    el: '#example',
     components: {
-<span class="javascript">    <span class="comment">// &lt;my-component&gt; 는 상위 템플릿에서만 사용할 수 있습니다.</span></span>
-<span class="javascript">        <span class="string">'my-component'</span>: Child</span>
+<span class="xml">    // <span class="tag">&lt;<span class="name">my-component</span>&gt;</span> 는 상위 템플릿에서만 사용할 수 있습니다.</span>
+        'my-component': Child
     }
 })
 <span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 <br>
 
 <ul>
-<li><strong>global/local component 등록</strong>  <pre><code class="javascript">Vue.component(...)</code></pre>
-생성되는 모든 Vue 객체에 component를 추가 (전역)  <pre><code class="javascript"><span class="keyword">new</span> Vue({
+<li><strong>global/local component 등록</strong>  <pre><code class="{.javascript}">Vue.component(...)</code></pre>
+생성되는 모든 Vue 객체에 component를 추가 (전역)  <pre><code class="{.javascript}">new Vue({
   components:{
   }
 }</code></pre>
@@ -270,22 +270,22 @@
 
 </li>
 </ul>
-<h4 id="3-prop"><a href="#3-prop" class="headerlink" title="3. prop"></a>3. prop</h4><pre><code class="javascript">Vue.component(<span class="string">'props-demo-simple'</span>, {
-    props: [<span class="string">'size'</span>, <span class="string">'myMessage'</span>]
+<h4 id="3-prop"><a href="#3-prop" class="headerlink" title="3. prop"></a>3. prop</h4><pre><code class="{.javascript}">Vue.component(&apos;props-demo-simple&apos;, {
+    props: [&apos;size&apos;, &apos;myMessage&apos;]
 })
 
-<span class="comment">// 유효성 검사를 포함한 객체 구문</span>
-Vue.component(<span class="string">'props-demo-advanced'</span>, {
+// 유효성 검사를 포함한 객체 구문
+Vue.component(&apos;props-demo-advanced&apos;, {
     props: {
-        <span class="comment">// 타입 체크만 합니다.</span>
-        height: <span class="built_in">Number</span>,
-        <span class="comment">// 타입 체크와 유효성 검사를 합니다.</span>
+        // 타입 체크만 합니다.
+        height: Number,
+        // 타입 체크와 유효성 검사를 합니다.
         age: {
-            type: <span class="built_in">Number</span>,
-            <span class="keyword">default</span>: <span class="number">0</span>,
-            required: <span class="literal">true</span>,
-            validator: <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>{
-                <span class="keyword">return</span> value &gt;= <span class="number">0</span>
+            type: Number,
+            default: 0,
+            required: true,
+            validator: function (value) {
+                return value &gt;= 0
             }
         }
     }
@@ -295,28 +295,28 @@ Vue.component(<span class="string">'props-demo-advanced'</span>, {
 <ul>
 <li><strong>부모 컴포넌트의 데이터를 받을 수 있는 속성</strong>  </li>
 </ul>
-<h4 id="4-computed"><a href="#4-computed" class="headerlink" title="4. computed"></a>4. computed</h4><pre><code class="javascript"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue({
-    data: { <span class="attr">a</span>: <span class="number">1</span> },
+<h4 id="4-computed"><a href="#4-computed" class="headerlink" title="4. computed"></a>4. computed</h4><pre><code class="{.javascript}">var vm = new Vue({
+    data: { a: 1 },
     computed: {
-        <span class="comment">// get만 가능합니다.</span>
-        aDouble: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
-            <span class="keyword">return</span> <span class="keyword">this</span>.a * <span class="number">2</span>
+        // get만 가능합니다.
+        aDouble: function () {
+            return this.a * 2
         },
-        <span class="comment">// get과 set 입니다.</span>
+        // get과 set 입니다.
         aPlus: {
-            <span class="keyword">get</span>: function () {
-                <span class="keyword">return</span> <span class="keyword">this</span>.a + <span class="number">1</span>
+            get: function () {
+                return this.a + 1
             },
-            <span class="keyword">set</span>: function (v) {
-                <span class="keyword">this</span>.a = v - <span class="number">1</span>
+            set: function (v) {
+                this.a = v - 1
             }
         }
     }
 })
-vm.aPlus   <span class="comment">// =&gt; 2</span>
-vm.aPlus = <span class="number">3</span>
-vm.a       <span class="comment">// =&gt; 2</span>
-vm.aDouble <span class="comment">// =&gt; 4</span></code></pre>
+vm.aPlus   // =&gt; 2
+vm.aPlus = 3
+vm.a       // =&gt; 2
+vm.aDouble // =&gt; 4</code></pre>
 <ul>
 <li><strong>Vue 인스턴스에 추가되는 계산된 속성</strong>  </li>
 <li>모든 getter &amp; setter 자동으로 this 컨텍스트를 Vue 인스턴스에 바인딩</li>
