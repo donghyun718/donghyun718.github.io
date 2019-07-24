@@ -228,36 +228,36 @@
 <ul>
 <li><strong>data를 Object와 function로 정의하는 것의 차이가 무엇일까?</strong><br>단일 컴포넌트라면 Object로 사용해도 괜찮지만, 부모 컴포넌트가 있거나 자식 컴포넌트가 있다면 Object 타입의 data는 같은 객체를 공유하기 때문에 한 컴포넌트에서 값을 변경하면 다 반영된다.<br>이를 해결하기 위해, function으로 새로운 객체 데이터를 반환한다.  </li>
 </ul>
-<h4 id="2-component"><a href="#2-component" class="headerlink" title="2. component"></a>2. component</h4><pre><code class="javascript">&lt;div id=<span class="string">"example"</span>&gt;
-    &lt;simple-counter&gt;&lt;/simple-counter&gt;
-    &lt;my-component&gt;&lt;/my-component&gt;
-&lt;<span class="regexp">/div&gt;</span>
-<span class="regexp"></span>
-<span class="regexp">&lt;script&gt;</span>
-<span class="regexp">/</span><span class="regexp">/ 등록</span>
-<span class="regexp">var Child = {</span>
-<span class="regexp">    template: '&lt;div&gt;사용자 정의 컴포넌트 입니다!&lt;/</span>div&gt;<span class="string">'</span>
-<span class="string">}</span>
-<span class="string"></span>
-<span class="string">Vue.component('</span>simple-counter<span class="string">', {</span>
-<span class="string">    template: '</span>&lt;button v-on:click=<span class="string">"counter += 1"</span>&gt;{{ counter }}&lt;/button&gt;<span class="string">',</span>
-<span class="string">    // 데이터는 기술적으로 함수이므로 Vue는 따지지 않지만</span>
-<span class="string">    // 각 컴포넌트 인스턴스에 대해 같은 객체 참조를 반환합니다.</span>
-<span class="string">    data: function () {</span>
-<span class="string">        return {</span>
-<span class="string">            counter: 0</span>
-<span class="string">        }</span>
-<span class="string">    }</span>
-<span class="string">})</span>
-<span class="string"></span>
-<span class="string">new Vue({</span>
-    el: '#example',
-    components: {
-    <span class="comment">// &lt;my-component&gt; 는 상위 템플릿에서만 사용할 수 있습니다.</span>
-        <span class="string">'my-component'</span>: Child
+<h4 id="2-component"><a href="#2-component" class="headerlink" title="2. component"></a>2. component</h4><pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">simple-counter</span>&gt;</span><span class="tag">&lt;/<span class="name">simple-counter</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">script</span>&gt;</span>
+<span class="javascript"><span class="comment">// 등록</span></span>
+<span class="javascript"><span class="keyword">var</span> Child = {</span>
+<span class="xml">    template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span>사용자 정의 컴포넌트 입니다!<span class="tag">&lt;/<span class="name">div</span>&gt;</span>'</span>
+}
+
+<span class="javascript">Vue.component(<span class="string">'simple-counter'</span>, {</span>
+<span class="xml">    template: '<span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span><span class="comment">{{ counter }}</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span>',</span>
+<span class="javascript">    <span class="comment">// 데이터는 기술적으로 함수이므로 Vue는 따지지 않지만</span></span>
+<span class="javascript">    <span class="comment">// 각 컴포넌트 인스턴스에 대해 같은 객체 참조를 반환합니다.</span></span>
+<span class="javascript">    data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span>
+<span class="javascript">        <span class="keyword">return</span> {</span>
+            counter: 0
+        }
     }
 })
-&lt;<span class="regexp">/script&gt;</span></code></pre>
+
+<span class="javascript"><span class="keyword">new</span> Vue({</span>
+<span class="javascript">    el: <span class="string">'#example'</span>,</span>
+    components: {
+<span class="javascript">    <span class="comment">// &lt;my-component&gt; 는 상위 템플릿에서만 사용할 수 있습니다.</span></span>
+<span class="javascript">        <span class="string">'my-component'</span>: Child</span>
+    }
+})
+<span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 <br>
 
 <ul>
