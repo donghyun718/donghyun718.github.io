@@ -261,7 +261,14 @@
 <br>
 
 <ul>
-<li><strong>global/local component 등록</strong><br><code>&lt;my-component&gt;</code>는 local, <code>simple-counter</code>는 global로 등록했다. local은 다른 인스턴스/컴포넌트의 범위에서만 사용할 수있는 컴포넌트를 만들 수 있습니다.  </li>
+<li><strong>global/local component 등록</strong>  <pre><code class="javascript">Vue.component(...)</code></pre>
+생성되는 모든 Vue 객체에 component를 추가 (전역)  <pre><code class="javascript"><span class="keyword">new</span> Vue({
+  components:{
+  }
+}</code></pre>
+생성하는 Vue 객체에 component를 추가 (지역)<br>이 객체에서만 component를 사용할 수 있다. <br>
+
+</li>
 </ul>
 <h4 id="3-prop"><a href="#3-prop" class="headerlink" title="3. prop"></a>3. prop</h4><pre><code class="javascript">Vue.component(<span class="string">'props-demo-simple'</span>, {
     props: [<span class="string">'size'</span>, <span class="string">'myMessage'</span>]
