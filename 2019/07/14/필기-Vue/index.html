@@ -213,115 +213,74 @@
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h3 id="Options-Data"><a href="#Options-Data" class="headerlink" title="Options / Data"></a>Options / Data</h3><h4 id="1-data"><a href="#1-data" class="headerlink" title="1. data"></a>1. data</h4><p><em><strong>object type</strong></em></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue&#123;</span><br><span class="line">    data : &#123;</span><br><span class="line">        a : <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue&#123;</span><br><span class="line">    data : &#123;</span><br><span class="line">        a : <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><em><strong>function type</strong></em>  </p>
-<pre><code class="javascript"><span class="keyword">new</span> Vue{
-    data : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
-        <span class="keyword">return</span> {
-            a : <span class="number">1</span>
-        }
-    }
-}</code></pre>
-<br>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue&#123;</span><br><span class="line">    data : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            a : <span class="number">1</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">&lt;br&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">- **data를 Object와 function로 정의하는 것의 차이가 무엇일까?**  </span></span><br><span class="line"><span class="string">단일 컴포넌트라면 Object로 사용해도 괜찮지만, 부모 컴포넌트가 있거나 자식 컴포넌트가 있다면 Object 타입의 data는 같은 객체를 공유하기 때문에 한 컴포넌트에서 값을 변경하면 다 반영된다.</span></span><br><span class="line"><span class="string">이를 해결하기 위해, function으로 새로운 객체 데이터를 반환한다.  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 2. component  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>html</span><br><span class="line">&lt;div id=<span class="string">"example"</span>&gt;</span><br><span class="line">    &lt;simple-counter&gt;&lt;/simple-counter&gt;</span><br><span class="line">    &lt;my-component&gt;&lt;/my-component&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ 등록</span></span><br><span class="line"><span class="regexp">var Child = &#123;</span></span><br><span class="line"><span class="regexp">    template: '&lt;div&gt;사용자 정의 컴포넌트 입니다!&lt;/</span>div&gt;<span class="string">'</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Vue.component('</span>simple-counter<span class="string">', &#123;</span></span><br><span class="line"><span class="string">    template: '</span>&lt;button v-on:click=<span class="string">"counter += 1"</span>&gt;&#123;&#123; counter &#125;&#125;&lt;<span class="regexp">/button&gt;',</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/ 데이터는 기술적으로 함수이므로 Vue는 따지지 않지만</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/ 각 컴포넌트 인스턴스에 대해 같은 객체 참조를 반환합니다.</span></span><br><span class="line"><span class="regexp">    data: function () &#123;</span></span><br><span class="line"><span class="regexp">        return &#123;</span></span><br><span class="line"><span class="regexp">            counter: 0</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">new Vue(&#123;</span></span><br><span class="line"><span class="regexp">    el: '#example',</span></span><br><span class="line"><span class="regexp">    components: &#123;</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/ &lt;my-component&gt; 는 상위 템플릿에서만 사용할 수 있습니다.</span></span><br><span class="line"><span class="regexp">        'my-component': Child</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;)</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line"><span class="string">``</span><span class="string">`   </span></span><br><span class="line"><span class="string">&lt;br&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">- **global/local component 등록**  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>&#123;.javascript&#125;</span><br><span class="line">Vue.component(...)</span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">생성되는 모든 Vue 객체에 component를 추가 (전역)  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>&#123;.javascript&#125;</span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    components:&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">생성하는 Vue 객체에 component를 추가 (지역)  </span></span><br><span class="line"><span class="string">이 객체에서만 component를 사용할 수 있다. </span></span><br><span class="line"><span class="string">&lt;br&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 3. prop  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>&#123;.javascript&#125;  </span><br><span class="line">Vue.component(<span class="string">'props-demo-simple'</span>, &#123;</span><br><span class="line">    props: [<span class="string">'size'</span>, <span class="string">'myMessage'</span>]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 유효성 검사를 포함한 객체 구문</span></span><br><span class="line">Vue.component(<span class="string">'props-demo-advanced'</span>, &#123;</span><br><span class="line">    props: &#123;</span><br><span class="line">        <span class="comment">// 타입 체크만 합니다.</span></span><br><span class="line">        height: <span class="built_in">Number</span>,</span><br><span class="line">        <span class="comment">// 타입 체크와 유효성 검사를 합니다.</span></span><br><span class="line">        age: &#123;</span><br><span class="line">            type: <span class="built_in">Number</span>,</span><br><span class="line">            <span class="keyword">default</span>: <span class="number">0</span>,</span><br><span class="line">            required: <span class="literal">true</span>,</span><br><span class="line">            validator: <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> value &gt;= <span class="number">0</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">&lt;br&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">- **부모 컴포넌트의 데이터를 받을 수 있는 속성**  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 4. computed  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>&#123;.javascript&#125; </span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;,</span><br><span class="line">    computed: &#123;</span><br><span class="line">        <span class="comment">// get만 가능합니다.</span></span><br><span class="line">        aDouble: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.a * <span class="number">2</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="comment">// get과 set 입니다.</span></span><br><span class="line">        aPlus: &#123;</span><br><span class="line">            <span class="keyword">get</span>: function () &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">this</span>.a + <span class="number">1</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="keyword">set</span>: function (v) &#123;</span><br><span class="line">                <span class="keyword">this</span>.a = v - <span class="number">1</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">vm.aPlus   <span class="comment">// =&gt; 2</span></span><br><span class="line">vm.aPlus = <span class="number">3</span></span><br><span class="line">vm.a       <span class="comment">// =&gt; 2</span></span><br><span class="line">vm.aDouble <span class="comment">// =&gt; 4</span></span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">- **Vue 인스턴스에 추가되는 계산된 속성**  </span></span><br><span class="line"><span class="string">- 모든 getter &amp; setter 자동으로 this 컨텍스트를 Vue 인스턴스에 바인딩</span></span><br><span class="line"><span class="string">- 계산된 속성은 캐시되며 의존하고 있는 반응형 속성이 변경되는 경우 다시 평가.</span></span><br><span class="line"><span class="string">- 특정한 의존성이 인스턴스의 범위를 벗어나는 경우(반응형이 아닌 경우)에 계산된 속성은 갱신되지 않음. 반응형 속성을 갖고 있지 않아 이를 수정하는 경우, DOM 갱신 발생하지 않음.  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 4. methods  </span></span><br><span class="line"><span class="string">- 인스턴스에 추가할 메소드</span></span><br><span class="line"><span class="string">- 인스턴스를 통해 직접 접근하거나 디렉티브 표현식에 사용  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>javascript</span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        plus: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.a++</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">vm.plus()</span><br><span class="line">vm.a <span class="comment">// 2</span></span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 5. watch  </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>javascript</span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123;</span><br><span class="line">        a: <span class="number">1</span>,</span><br><span class="line">        b: <span class="number">2</span>,</span><br><span class="line">        c: <span class="number">3</span>,</span><br><span class="line">        d: <span class="number">4</span>,</span><br><span class="line">        e: &#123;</span><br><span class="line">            f: &#123;</span><br><span class="line">                g: <span class="number">5</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    watch: &#123;</span><br><span class="line">        a: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'new: %s, old: %s'</span>, val, oldVal)</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="comment">// 문자열 메소드 이름</span></span><br><span class="line">        b: <span class="string">'someMethod'</span>,</span><br><span class="line">        <span class="comment">// 깊은 감시자</span></span><br><span class="line">        c: &#123;</span><br><span class="line">            handler: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;,</span><br><span class="line">            deep: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="comment">// 콜백은 관찰이 시작된 직후 호출됩니다.</span></span><br><span class="line">        d: &#123;</span><br><span class="line">            handler: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;,</span><br><span class="line">            immediate: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        e: [</span><br><span class="line">            <span class="function"><span class="keyword">function</span> <span class="title">handle1</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;,</span><br><span class="line">            <span class="function"><span class="keyword">function</span> <span class="title">handle2</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line">        ],</span><br><span class="line">        <span class="comment">// watch vm.e.f's value: &#123;g: 5&#125;</span></span><br><span class="line">        <span class="string">'e.f'</span>: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">vm.a = <span class="number">2</span> <span class="comment">// =&gt; new: 2, old: 1</span></span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">- key : 표현식, val : callback</span></span><br><span class="line"><span class="string">- Vue 인스턴스는 생성시 객체의 각 항목에 대해 $watch()를 호출  </span></span><br><span class="line"><span class="string">- watch에 화살표 함수 사용은 안됨.  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### computed vs watch vs method</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>html</span><br><span class="line">&lt;div id=<span class="string">"demo"</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"text"</span> v-model=<span class="string">"firstName"</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"text"</span> v-model=<span class="string">"lastName"</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;button v-on:click=<span class="string">"Full"</span>&gt;이름출력&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;br/</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"text"</span> v-model=<span class="string">"fullName"</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">```  </span></span><br><span class="line"><span class="regexp">_**methods**_  </span></span><br><span class="line"><span class="regexp">```javascript</span></span><br><span class="line"><span class="regexp">new Vue(&#123;</span></span><br><span class="line"><span class="regexp">    el: '#demo',</span></span><br><span class="line"><span class="regexp">    data: &#123;</span></span><br><span class="line"><span class="regexp">        firstName: 'Foo',</span></span><br><span class="line"><span class="regexp">        lastName: 'Bar',</span></span><br><span class="line"><span class="regexp">        fullName: 'Foo Bar'</span></span><br><span class="line"><span class="regexp">    &#125;,</span></span><br><span class="line"><span class="regexp">    methods:&#123;</span></span><br><span class="line"><span class="regexp">        Full : function()&#123;</span></span><br><span class="line"><span class="regexp">        this.fullName = (this.firstName + this.lastName);</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;);</span></span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><strong>data를 Object와 function로 정의하는 것의 차이가 무엇일까?</strong><br>단일 컴포넌트라면 Object로 사용해도 괜찮지만, 부모 컴포넌트가 있거나 자식 컴포넌트가 있다면 Object 타입의 data는 같은 객체를 공유하기 때문에 한 컴포넌트에서 값을 변경하면 다 반영된다.<br>이를 해결하기 위해, function으로 새로운 객체 데이터를 반환한다.  </li>
+<li>methods는 key가 메소드 이름  </li>
+<li>호출되면 함수 수행  </li>
 </ul>
-<h4 id="2-component"><a href="#2-component" class="headerlink" title="2. component"></a>2. component</h4><pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example"</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">simple-counter</span>&gt;</span><span class="tag">&lt;/<span class="name">simple-counter</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span>
+<p><em><strong>computed</strong></em>  </p>
+<pre><code class="javascript"><span class="keyword">new</span> Vue({
+    computed :{
+        fullName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
+            <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">' '</span> + <span class="keyword">this</span>.lastName
+        }
+    } 
+});</code></pre>
+<ul>
+<li>computed는 명시를 안하면 기본적으로 get임</li>
+<li>computed는 key가 메소드 이름  </li>
+<li>함수에 종속된 변수의 값(예시. firstName, lastName)이 바뀌면 수행  </li>
+</ul>
+<p><em><strong>watch</strong></em>  </p>
+<pre><code class="javascript"><span class="keyword">new</span> Vue({
+    watch: {
+        firstName: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>{
+            <span class="keyword">this</span>.fullName = val + <span class="string">' '</span> + <span class="keyword">this</span>.lastName
+        },
+        lastName: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>{
+            <span class="keyword">this</span>.fullName = <span class="keyword">this</span>.firstName + <span class="string">' '</span> + val
+        }
+    }
+});</code></pre>
+<ul>
+<li>key 값으로 지정한 변수의 값이 바뀌면 수행  </li>
+</ul>
+<p><em><strong>computed vs watch</strong></em>  </p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="comment">{{ num }}</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span>
+    <span class="comment">{{ calculated }}</span>
+    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"count --"</span>&gt;</span>-<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
 <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
 
 <span class="tag">&lt;<span class="name">script</span>&gt;</span>
-<span class="javascript"><span class="comment">// 등록</span></span>
-<span class="javascript"><span class="keyword">var</span> Child = {</span>
-<span class="xml">    template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span>사용자 정의 컴포넌트 입니다!<span class="tag">&lt;/<span class="name">div</span>&gt;</span>'</span>
-}
-
-<span class="javascript">Vue.component(<span class="string">'simple-counter'</span>, {</span>
-<span class="xml">    template: '<span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span><span class="comment">{{ counter }}</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span>',</span>
-<span class="javascript">    <span class="comment">// 데이터는 기술적으로 함수이므로 Vue는 따지지 않지만</span></span>
-<span class="javascript">    <span class="comment">// 각 컴포넌트 인스턴스에 대해 같은 객체 참조를 반환합니다.</span></span>
-<span class="javascript">    data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span>
-<span class="javascript">        <span class="keyword">return</span> {</span>
-            counter: 0
-        }
-    }
-})
-
 <span class="javascript"><span class="keyword">new</span> Vue({</span>
-<span class="javascript">    el: <span class="string">'#example'</span>,</span>
-    components: {
-<span class="javascript">    <span class="comment">// &lt;my-component&gt; 는 상위 템플릿에서만 사용할 수 있습니다.</span></span>
-<span class="javascript">        <span class="string">'my-component'</span>: Child</span>
+<span class="javascript">    el: <span class="string">"#app"</span>,</span>
+    data: {
+        num: 3,
+    },
+    computed: {
+<span class="javascript">        calculated: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span>
+<span class="javascript">            <span class="keyword">if</span>(<span class="keyword">this</span>.num === <span class="number">2</span>) {</span>
+<span class="javascript">                  alert(<span class="string">'num is 2'</span>)</span>
+            }
+        }
+    },
+    watch: {
+<span class="javascript">        count: <span class="function"><span class="keyword">function</span> (<span class="params">newVal</span>) </span>{</span>
+<span class="javascript">            <span class="keyword">if</span>(newVal === <span class="number">0</span>) {</span>
+<span class="javascript">                  alert(<span class="string">'num is 0'</span>)</span>
+<span class="javascript">                <span class="keyword">this</span>.num = <span class="number">3</span></span>
+            }
+        }
     }
 })
 <span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
-<br>
-
 <ul>
-<li><strong>global/local component 등록</strong>  <pre><code class="{.javascript}">Vue.component(...)</code></pre>
-생성되는 모든 Vue 객체에 component를 추가 (전역)  <pre><code class="{.javascript}">new Vue({
-  components:{
-  }
-}</code></pre>
-생성하는 Vue 객체에 component를 추가 (지역)<br>이 객체에서만 component를 사용할 수 있다. <br>
-
-</li>
-</ul>
-<h4 id="3-prop"><a href="#3-prop" class="headerlink" title="3. prop"></a>3. prop</h4><pre><code class="{.javascript}">Vue.component(&apos;props-demo-simple&apos;, {
-    props: [&apos;size&apos;, &apos;myMessage&apos;]
-})
-
-// 유효성 검사를 포함한 객체 구문
-Vue.component(&apos;props-demo-advanced&apos;, {
-    props: {
-        // 타입 체크만 합니다.
-        height: Number,
-        // 타입 체크와 유효성 검사를 합니다.
-        age: {
-            type: Number,
-            default: 0,
-            required: true,
-            validator: function (value) {
-                return value &gt;= 0
-            }
-        }
-    }
-})</code></pre>
-<br>
-
-<ul>
-<li><strong>부모 컴포넌트의 데이터를 받을 수 있는 속성</strong>  </li>
-</ul>
-<h4 id="4-computed"><a href="#4-computed" class="headerlink" title="4. computed"></a>4. computed</h4><pre><code class="{.javascript}">var vm = new Vue({
-    data: { a: 1 },
-    computed: {
-        // get만 가능합니다.
-        aDouble: function () {
-            return this.a * 2
-        },
-        // get과 set 입니다.
-        aPlus: {
-            get: function () {
-                return this.a + 1
-            },
-            set: function (v) {
-                this.a = v - 1
-            }
-        }
-    }
-})
-vm.aPlus   // =&gt; 2
-vm.aPlus = 3
-vm.a       // =&gt; 2
-vm.aDouble // =&gt; 4</code></pre>
-<ul>
-<li><strong>Vue 인스턴스에 추가되는 계산된 속성</strong>  </li>
-<li>모든 getter &amp; setter 자동으로 this 컨텍스트를 Vue 인스턴스에 바인딩</li>
-<li>계산된 속성은 캐시되며 의존하고 있는 반응형 속성이 변경되는 경우 다시 평가.</li>
-<li>특정한 의존성이 인스턴스의 범위를 벗어나는 경우(반응형이 아닌 경우)에 계산된 속성은 갱신되지 않음. 반응형 속성을 갖고 있지 않아 이를 수정하는 경우, DOM 갱신 발생하지 않음.</li>
+<li><code></code>를 호출하는 부분이 없으면 <code>num</code> 값이 변경돼도 함수가 수행되지 않아 출력해줘야 한다. </li>
 </ul>
 
 
