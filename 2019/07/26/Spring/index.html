@@ -273,6 +273,8 @@
 <h3 id="Bean-객체-생성"><a href="#Bean-객체-생성" class="headerlink" title="Bean 객체 생성"></a>Bean 객체 생성</h3><p><code>&lt;bean id=&quot;board&quot; class=&quot;com.board.vo.Board&quot;/&gt;</code></p>
 <h3 id="의존성-주입-방법"><a href="#의존성-주입-방법" class="headerlink" title="의존성 주입 방법"></a>의존성 주입 방법</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">board</span></span>&#123;</span><br><span class="line">    String title;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">board</span><span class="params">(String title)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.title = title;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTitle</span><span class="params">(String title)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.title = title;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<br>
+
 <ol>
 <li><strong>생성자를 통한 의존성 주입</strong>  </li>
 </ol>
@@ -283,6 +285,8 @@
     <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">ref</span>=<span class="string">"title"</span> <span class="attr">index</span>=<span class="string">'1'</span> <span class="attr">type</span>=<span class="string">"java.lang.String"</span>/&gt;</span>
     <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"academy"</span> <span class="attr">index</span>=<span class="string">'0'</span>/&gt;</span>
 <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></code></pre>
+<br>
+
 <ol start="2">
 <li><strong>setter를 통해 의존성 주입</strong>  </li>
 </ol>
