@@ -193,12 +193,11 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h1 id="Spring이란"><a href="#Spring이란" class="headerlink" title="Spring이란?"></a>Spring이란?</h1><ul>
+                <h1 id="Spring이란"><a href="#Spring이란" class="headerlink" title="Spring이란"></a>Spring이란</h1><ul>
 <li>엔터프라이즈 어플리케이션에서 필요로 하는 기능을 제공하는 프레임워크  </li>
 <li>동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공  </li>
 </ul>
-<hr>  
-
+<hr>
 <h2 id="스프링-특징"><a href="#스프링-특징" class="headerlink" title="스프링 특징"></a>스프링 특징</h2><ol>
 <li><strong>경량 컨테이너</strong><br>: 자바 객체의 라이프 사이클을 관리하며 스프링으로부터 필요한 객체를 얻는다.  </li>
 <li><strong>IoC(Inversion of Control)</strong><br>: 컨트롤의 제어권이 사용자가 아닌 프레임워크에 있다.  </li>
@@ -214,8 +213,6 @@
 <li>빈을 생성하고 분배하는 역할  </li>
 <li>getBean() 메소드가 호출될 때까지 Bean 생성을 미룸(lazy loading)</li>
 </ul>
-<br>
-
 <ol start="2">
 <li>ApplicationContext<br>: 애플리케이션 프레임워크를 제공해 BeanFactory 개념 위에 구현된 컨테이너  </li>
 </ol>
@@ -267,18 +264,12 @@
 <li>Hobby 객체를 변경하면 의존한 People 객체도 변경된다.  </li>
 <li>Maven : 의존관계에 있는 라이브러리를 알아서 다운받고 배포까지 해준다.  </li>
 </ul>
-<br>
-
 <h3 id="DI-의존성-주입"><a href="#DI-의존성-주입" class="headerlink" title="DI(의존성 주입)"></a>DI(의존성 주입)</h3><ul>
 <li>객체가 아닌 프레임워크에 의해 객체 의존성이 주입된다.  </li>
 <li>프레임 워크에 의해 동적으로 의존성이 주입돼 여러 객체간 결합이 줄어든다.  </li>
 <li>Container가 bean 객체를 생성하고 종속성을 주입한다.  </li>
 </ul>
-<br>
-
-<h3 id="Bean-객체-생성"><a href="#Bean-객체-생성" class="headerlink" title="Bean 객체 생성"></a>Bean 객체 생성</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"board"</span> <span class="attr">class</span>=<span class="string">"com.board.vo.Board"</span>/&gt;</span></span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">### 의존성 주입 방법  </span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">class board&#123;</span><br><span class="line">    String title;</span><br><span class="line"></span><br><span class="line">    public board(String title)&#123;</span><br><span class="line">        this.title = title;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setTitle(String title)&#123;</span><br><span class="line">        this.title = title;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<br>
+<h3 id="Bean-객체-생성"><a href="#Bean-객체-생성" class="headerlink" title="Bean 객체 생성"></a>Bean 객체 생성</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"board"</span> <span class="attr">class</span>=<span class="string">"com.board.vo.Board"</span>/&gt;</span></span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">### 의존성 주입 방법  </span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">class board&#123;</span><br><span class="line">    String title;</span><br><span class="line"></span><br><span class="line">    public board(String title)&#123;</span><br><span class="line">        this.title = title;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setTitle(String title)&#123;</span><br><span class="line">        this.title = title;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol>
 <li><strong>생성자를 통한 의존성 주입</strong>  </li>
@@ -290,8 +281,6 @@
     <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">ref</span>=<span class="string">"title"</span> <span class="attr">index</span>=<span class="string">'1'</span> <span class="attr">type</span>=<span class="string">"java.lang.String"</span>/&gt;</span>
     <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"academy"</span> <span class="attr">index</span>=<span class="string">'0'</span>/&gt;</span>
 <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></code></pre>
-<br>
-
 <ol start="2">
 <li><strong>setter를 통해 의존성 주입</strong>  </li>
 </ol>
@@ -299,8 +288,6 @@
     <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"title"</span> <span class="attr">ref</span>=<span class="string">"title"</span>/&gt;</span>
     ...
 <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></code></pre>
-<br>
-
 <h3 id="DI의-장점"><a href="#DI의-장점" class="headerlink" title="DI의 장점"></a>DI의 장점</h3><ul>
 <li>종속성 감소  </li>
 <li>재사용성 증가  </li>
