@@ -299,7 +299,33 @@
 <li>재사용성 증가  </li>
 <li>코드를 읽기 쉬워짐  </li>
 </ul>
-<h2 id="4-AOP-Aspect-Oriented-Programming"><a href="#4-AOP-Aspect-Oriented-Programming" class="headerlink" title="4. AOP(Aspect Oriented Programming)"></a>4. AOP(Aspect Oriented Programming)</h2><h2 id="5-MVC"><a href="#5-MVC" class="headerlink" title="5. MVC"></a>5. MVC</h2>
+<h2 id="4-AOP-Aspect-Oriented-Programming"><a href="#4-AOP-Aspect-Oriented-Programming" class="headerlink" title="4. AOP(Aspect Oriented Programming)"></a>4. AOP(Aspect Oriented Programming)</h2><h2 id="5-MVC"><a href="#5-MVC" class="headerlink" title="5. MVC"></a>5. MVC</h2><h3 id="1-기존-MVC-패턴"><a href="#1-기존-MVC-패턴" class="headerlink" title="1) 기존 MVC 패턴"></a>1) 기존 MVC 패턴</h3><p><img src="../../themes/clean-blog/source/img/mvc-pattern.png" alt="mvc-pattern">  </p>
+<p><em><strong>Main Controller</strong></em>  </p>
+<ul>
+<li>요청 URL 파악(spring)  </li>
+<li>처리할 함수로 분기(spring)</li>
+<li>요청 data 추출(spring)</li>
+<li>모델 수행</li>
+<li>결과 처리  </li>
+<li>view로 이동 : forward, redirect(spring)  </li>
+</ul>
+<h3 id="2-Spring-MVC"><a href="#2-Spring-MVC" class="headerlink" title="2) Spring MVC"></a>2) Spring MVC</h3><p><img src="../../themes/clean-blog/source/img/Spring-mvc.png" alt="spring-mvc">  </p>
+<p><em><strong>web.xml</strong></em>  </p>
+<ul>
+<li>Dispatcher Servlet 등록</li>
+<li>Bean configuration 파일을 Dispatcher Servlet에 설정  </li>
+</ul>
+<p><em><strong>Dispatcher Servlet</strong></em>  </p>
+<ul>
+<li>Spring Container 생성</li>
+<li>요청에 따른 분기  <ul>
+<li>HadlerMapper에서 url에 따른 Controller 메서드 리턴</li>
+<li>Controller 메서드 호출해서 View 정보 리턴</li>
+</ul>
+</li>
+<li>ViewResolver를 통해 view를 찾거나 생성</li>
+</ul>
+
 
                 
             </div>
