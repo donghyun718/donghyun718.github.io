@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="내용정리-스프링">
+        <meta property="og:title" content="Spring">
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>내용정리-스프링 - July Summer</title>
+    <title>Spring - July Summer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -165,13 +165,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>내용정리-스프링</h1>
+                    <h1>Spring</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2019-07-25
+                            2019-07-26
                         
                     </span>
                 </div>
@@ -193,11 +193,10 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="Spring이란"><a href="#Spring이란" class="headerlink" title="Spring이란"></a>Spring이란</h2><ul>
+                <h2 id="Spring-이란"><a href="#Spring-이란" class="headerlink" title="Spring 이란"></a>Spring 이란</h2><ul>
 <li>엔터프라이즈 어플리케이션에서 필요로 하는 기능을 제공하는 프레임워크  </li>
 <li>동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공  </li>
 </ul>
-<hr>
 <h2 id="스프링-특징"><a href="#스프링-특징" class="headerlink" title="스프링 특징"></a>스프링 특징</h2><ol>
 <li><strong>경량 컨테이너</strong><br>: 자바 객체의 라이프 사이클을 관리하며 스프링으로부터 필요한 객체를 얻는다.  </li>
 <li><strong>IoC(Inversion of Control)</strong><br>: 컨트롤의 제어권이 사용자가 아닌 프레임워크에 있다.  </li>
@@ -269,7 +268,12 @@
 <li>프레임 워크에 의해 동적으로 의존성이 주입돼 여러 객체간 결합이 줄어든다.  </li>
 <li>Container가 bean 객체를 생성하고 종속성을 주입한다.  </li>
 </ul>
-<h3 id="Bean-객체-생성"><a href="#Bean-객체-생성" class="headerlink" title="Bean 객체 생성"></a>Bean 객체 생성</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"board"</span> <span class="attr">class</span>=<span class="string">"com.board.vo.Board"</span>/&gt;</span></span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">### 의존성 주입 방법  </span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">class board&#123;</span><br><span class="line">    String title;</span><br><span class="line"></span><br><span class="line">    public board(String title)&#123;</span><br><span class="line">        this.title = title;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setTitle(String title)&#123;</span><br><span class="line">        this.title = title;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[RuntimeContext main] -- create --&gt; B[SpringFramework ApplicationContext]</span><br><span class="line">B -- create --&gt; C[People]</span><br><span class="line">B -- create --&gt; D[Hobby]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bean-객체-생성"><a href="#Bean-객체-생성" class="headerlink" title="Bean 객체 생성"></a>Bean 객체 생성</h3><p><code>&lt;bean id=&quot;board&quot; class=&quot;com.board.vo.Board&quot;/&gt;</code></p>
+<h3 id="의존성-주입-방법"><a href="#의존성-주입-방법" class="headerlink" title="의존성 주입 방법"></a>의존성 주입 방법</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">board</span></span>&#123;</span><br><span class="line">    String title;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">board</span><span class="params">(String title)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.title = title;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTitle</span><span class="params">(String title)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.title = title;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
 
 <ol>
 <li><strong>생성자를 통한 의존성 주입</strong>  </li>
@@ -281,6 +285,8 @@
     <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">ref</span>=<span class="string">"title"</span> <span class="attr">index</span>=<span class="string">'1'</span> <span class="attr">type</span>=<span class="string">"java.lang.String"</span>/&gt;</span>
     <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"academy"</span> <span class="attr">index</span>=<span class="string">'0'</span>/&gt;</span>
 <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></code></pre>
+<br>
+
 <ol start="2">
 <li><strong>setter를 통해 의존성 주입</strong>  </li>
 </ol>
@@ -293,7 +299,33 @@
 <li>재사용성 증가  </li>
 <li>코드를 읽기 쉬워짐  </li>
 </ul>
-<h2 id="4-AOP-Aspect-Oriented-Programming"><a href="#4-AOP-Aspect-Oriented-Programming" class="headerlink" title="4. AOP(Aspect Oriented Programming)"></a>4. AOP(Aspect Oriented Programming)</h2><h2 id="5-MVC"><a href="#5-MVC" class="headerlink" title="5. MVC"></a>5. MVC</h2><h2 id="6-WebForm"><a href="#6-WebForm" class="headerlink" title="6. WebForm"></a>6. WebForm</h2>
+<h2 id="4-AOP-Aspect-Oriented-Programming"><a href="#4-AOP-Aspect-Oriented-Programming" class="headerlink" title="4. AOP(Aspect Oriented Programming)"></a>4. AOP(Aspect Oriented Programming)</h2><h2 id="5-MVC"><a href="#5-MVC" class="headerlink" title="5. MVC"></a>5. MVC</h2><h3 id="1-기존-MVC-패턴"><a href="#1-기존-MVC-패턴" class="headerlink" title="1) 기존 MVC 패턴"></a>1) 기존 MVC 패턴</h3><p><img src="../../themes/clean-blog/source/img/mvc-pattern.png" alt="mvc-pattern">  </p>
+<p><em><strong>Main Controller</strong></em>  </p>
+<ul>
+<li>요청 URL 파악(spring)  </li>
+<li>처리할 함수로 분기(spring)</li>
+<li>요청 data 추출(spring)</li>
+<li>모델 수행</li>
+<li>결과 처리  </li>
+<li>view로 이동 : forward, redirect(spring)  </li>
+</ul>
+<h3 id="2-Spring-MVC"><a href="#2-Spring-MVC" class="headerlink" title="2) Spring MVC"></a>2) Spring MVC</h3><p><img src="../../themes/clean-blog/source/img/Spring-mvc.png" alt="spring-mvc">  </p>
+<p><em><strong>web.xml</strong></em>  </p>
+<ul>
+<li>Dispatcher Servlet 등록</li>
+<li>Bean configuration 파일을 Dispatcher Servlet에 설정  </li>
+</ul>
+<p><em><strong>Dispatcher Servlet</strong></em>  </p>
+<ul>
+<li>Spring Container 생성</li>
+<li>요청에 따른 분기  <ul>
+<li>HadlerMapper에서 url에 따른 Controller 메서드 리턴</li>
+<li>Controller 메서드 호출해서 View 정보 리턴</li>
+</ul>
+</li>
+<li>ViewResolver를 통해 view를 찾거나 생성</li>
+</ul>
+
 
                 
             </div>
