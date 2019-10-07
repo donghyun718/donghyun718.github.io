@@ -235,42 +235,16 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Xtest = [<span class="number">9</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Ytest = <span class="number">3</span></span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>predicting exam score</p>
-<ul>
-<li><p>score(0~100)는 범위가 넓어 <strong>regression</strong></p>
+<li>predicting exam score<ul>
+<li>score(0~100)는 범위가 넓어 <em>regression</em></li>
+<li>P/F로 나눈다면 <em>binary classification</em></li>
+<li>grade를 준다면 여러 레이블 중 나눈다면 <strong>multi-label classification</strong></li>
+</ul>
 </li>
-<li><p>P/F로 나눈다면 <strong>binary classification</strong></p>
-</li>
-<li><p>grade를 준다면 여러 레이블 중 나눈다면 <strong>multi-label classification</strong></p>
-<table>
-<thead>
-<tr>
-<th>x(hours)</th>
-<th>y(score)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>10</td>
-<td>90</td>
-</tr>
-<tr>
-<td>9</td>
-<td>80</td>
-</tr>
-<tr>
-<td>3</td>
-<td>50</td>
-</tr>
-<tr>
-<td>2</td>
-<td>30</td>
-</tr>
-</tbody></table>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Xtest = [<span class="number">10</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">2</span>]      <span class="comment"># 공부한 시간</span></span><br><span class="line">Ytest = [<span class="number">90</span>,<span class="number">80</span>,<span class="number">50</span>,<span class="number">30</span>]   <span class="comment"># 시험 점수</span></span><br></pre></td></tr></table></figure>
+
 <p>train_data -&gt; regression -&gt; result</p>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="Linear-Regression"><a href="#Linear-Regression" class="headerlink" title="Linear Regression"></a>Linear Regression</h2><table>
 <thead>
 <tr>
