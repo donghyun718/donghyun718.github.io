@@ -204,15 +204,15 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="기본적인-ML의-용어와-개념"><a href="#기본적인-ML의-용어와-개념" class="headerlink" title="기본적인 ML의 용어와 개념"></a>기본적인 ML의 용어와 개념</h2><h3 id="1-ML"><a href="#1-ML" class="headerlink" title="1. ML"></a>1. ML</h3><p>: 개발자가 일일이 정하지 않고 프로그램 자체가 데이터를 학습해서 무언가를 배우는 프로그램</p>
-<h3 id="2-Supervised-Learning"><a href="#2-Supervised-Learning" class="headerlink" title="2. Supervised Learning"></a>2. Supervised Learning</h3><p>: 레이블(결과값)들이 정해져있는 데이터로 학습</p>
+                <h1 id="기본적인-ML의-용어와-개념"><a href="#기본적인-ML의-용어와-개념" class="headerlink" title="기본적인 ML의 용어와 개념"></a>기본적인 ML의 용어와 개념</h1><h2 id="1-ML"><a href="#1-ML" class="headerlink" title="1. ML"></a>1. ML</h2><p>: 개발자가 일일이 정하지 않고 프로그램 자체가 데이터를 학습해서 무언가를 배우는 프로그램</p>
+<h2 id="2-Supervised-Learning"><a href="#2-Supervised-Learning" class="headerlink" title="2. Supervised Learning"></a>2. Supervised Learning</h2><p>: 레이블(결과값)들이 정해져있는 데이터로 학습</p>
 <ul>
 <li>image labeling</li>
 <li>email spam filter</li>
 <li>predicting exam score</li>
 </ul>
-<h3 id="3-Unsupervised-Learning"><a href="#3-Unsupervised-Learning" class="headerlink" title="3. Unsupervised Learning"></a>3. Unsupervised Learning</h3><p>: 레이블이 정해져있지 않는 데이터로 스스로 학습.</p>
-<h3 id="4-Training-data-set"><a href="#4-Training-data-set" class="headerlink" title="4. Training data set"></a>4. Training data set</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Xtest = [<span class="number">9</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Ytest = <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-Unsupervised-Learning"><a href="#3-Unsupervised-Learning" class="headerlink" title="3. Unsupervised Learning"></a>3. Unsupervised Learning</h2><p>: 레이블이 정해져있지 않는 데이터로 스스로 학습.</p>
+<h2 id="4-Training-data-set"><a href="#4-Training-data-set" class="headerlink" title="4. Training data set"></a>4. Training data set</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Xtest = [<span class="number">9</span>,<span class="number">3</span>,<span class="number">6</span>]</span><br><span class="line">Ytest = <span class="number">3</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>predicting exam score<ul>
@@ -225,11 +225,11 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Xtest = [<span class="number">10</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">2</span>]      <span class="comment"># 공부한 시간</span></span><br><span class="line">Ytest = [<span class="number">90</span>,<span class="number">80</span>,<span class="number">50</span>,<span class="number">30</span>]   <span class="comment"># 시험 점수</span></span><br></pre></td></tr></table></figure>
 
 <p>train_data -&gt; regression -&gt; result</p>
-<h2 id="Linear-Regression"><a href="#Linear-Regression" class="headerlink" title="Linear Regression"></a>Linear Regression</h2><h3 id="1-Linear-Hypothesis"><a href="#1-Linear-Hypothesis" class="headerlink" title="1. (Linear) Hypothesis"></a>1. (Linear) Hypothesis</h3><p>H(x) = W * x + b</p>
-<h3 id="2-Cost-function"><a href="#2-Cost-function" class="headerlink" title="2. Cost function"></a>2. Cost function</h3><p>H(x) - y -&gt; (H(x) - y)^2</p>
+<h1 id="Linear-Regression"><a href="#Linear-Regression" class="headerlink" title="Linear Regression"></a>Linear Regression</h1><h2 id="1-Linear-Hypothesis"><a href="#1-Linear-Hypothesis" class="headerlink" title="1. (Linear) Hypothesis"></a>1. (Linear) Hypothesis</h2><p>H(x) = W * x + b</p>
+<h2 id="2-Cost-function"><a href="#2-Cost-function" class="headerlink" title="2. Cost function"></a>2. Cost function</h2><p>H(x) - y -&gt; (H(x) - y)^2</p>
 <p>cost function은 보통 차이를 제곱한다. 일정하게 차이를 양수로 표현하고 차이가 작을 때보다 클 때 패널티를 더 줄 수 있다.<br><img src="/img/costfunction.PNG" alt="cost_function"></p>
 <p><strong>cost function의 값을 최소화하는 W와 b의 값을 구하는 것이 목표</strong></p>
-<h4 id="Linear-Regression-cost-function-최소화"><a href="#Linear-Regression-cost-function-최소화" class="headerlink" title="Linear Regression cost function 최소화"></a>Linear Regression cost function 최소화</h4><ul>
+<h2 id="Linear-Regression-cost-function-최소화"><a href="#Linear-Regression-cost-function-최소화" class="headerlink" title="Linear Regression cost function 최소화"></a>Linear Regression cost function 최소화</h2><ul>
 <li>Gradient descent algorithm<ul>
 <li>minimize cost function</li>
 <li>경사도가 0일 때를 찾는 알고리즘</li>
@@ -238,7 +238,7 @@
 </li>
 </ul>
 <p><img src="/img/gradient_descent.PNG" alt="gradient_descent"></p>
-<h2 id="Logistic-Regression-Classification"><a href="#Logistic-Regression-Classification" class="headerlink" title="Logistic (Regression) Classification"></a>Logistic (Regression) Classification</h2>
+<h1 id="Logistic-Regression-Classification"><a href="#Logistic-Regression-Classification" class="headerlink" title="Logistic (Regression) Classification"></a>Logistic (Regression) Classification</h1>
 
                 
             </div>
